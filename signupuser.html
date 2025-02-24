@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="main.js" defer type="module"></script>
+    <link rel="stylesheet" href="signupuser.css"> <!-- Linking the external CSS file -->
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>USER Login</h2>
+
+        <!-- Name Entry -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+         <!-- Name Entry -->
+         <label for="email">Email</label>
+         <input type="text" id="email" name="email" placeholder="Enter your Email ID">
+        
+          <!-- Name Entry -->
+        <label for="DOB">DOB</label>
+        <input type="text" id="DOB" name="DOB" placeholder="Enter your DOB DD/MM/YY">
+<!-- 
+        <form>
+            <label for="age-check">Are you clean of any police reports against you?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="age-check" value="yes">
+                <label for="yes">Yes</label>
+                
+                <input type="radio" id="no" name="age-check" value="no">
+                <label for="no">No</label>
+            </div>
+        </form> -->
+
+        <form></form>
+            <label for="age-check">Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="age-check" value="yes">
+                <label for="yes">M</label>
+                
+                <input type="radio" id="no" name="age-check" value="no">
+                <label for="no">F</label>
+
+                <input type="radio" id="no" name="age-check" value="no">
+                <label for="no">Non Binary</label>
+            </div>
+        </form>
+        
+          <!-- Name Entry
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"> -->
+
+        <hr>
+        <!-- UID Entry -->
+        <label for="uid">ADHAAR</label>
+        <input type="text" id="uid" name="uid" placeholder="Enter your ADHAAR">
+
+        <!-- Login Button -->
+       <a href="herouser.html"> <button type="submit">Login</button></a>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCwnsaN0Ls_oZ2nfmNktpIb89_RK_fR3vg",
+          authDomain: "auth-b5301.firebaseapp.com",
+          projectId: "auth-b5301",
+          storageBucket: "auth-b5301.firebasestorage.app",
+          messagingSenderId: "476753493854",
+          appId: "1:476753493854:web:5dd433763fa566780499cf",
+          measurementId: "G-1ZNCT6G4FE"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+</body>
+</html>
+
+
